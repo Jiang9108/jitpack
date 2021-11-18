@@ -7,6 +7,7 @@ import com.lt.jitpacktest.activity.YunBuNavigateActivity;
 import com.lt.jitpacktest.utils.HttpUtils;
 import com.lt.jitpacktest.utils.SessionSingleton;
 import com.lt.jitpacktest.utils.Utils;
+import com.qubian.mob.QbManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -122,6 +123,17 @@ public class YunBuFolwWall {
                             }
                         }
 
+
+                        QbManager.init(context, "1458719622755795038", new QbManager.IsInitListener() {
+                            @Override
+                            public void onFail(String s) {
+                            }
+
+                            @Override
+                            public void onSuccess() {
+
+                            }
+                        });
                     } else {
                         Utils.showToast(context, returnJSONObject.getString("msg"));
                     }

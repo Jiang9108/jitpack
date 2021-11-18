@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -24,6 +24,13 @@ android {
 
 }
 
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -31,4 +38,19 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //添加QB依赖包
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation(name: 'qb_lib_1.11.15.4', ext: 'aar')
+    implementation(name: 'open_sdk_4.0.0.1', ext: 'aar')
+    implementation(name: 'GDTSDK.unionNormal.4.410.1280.1', ext: 'aar')
+    implementation(name: 'kssdk-all-3.3.23', ext: 'aar')
+    implementation(name: 'tb_sdk_crack-release', ext: 'aar')
+    implementation 'com.alibaba:fastjson:1.2.68'
+
+    implementation(name: 'Baidu_MobAds_SDK-release_v9.16', ext: 'aar')
+    implementation(name: 'windAd-3.4.1', ext: 'aar')
+
+    implementation(name: 'qb_lib_pr', ext: 'aar')//共存类广告需要
+    implementation 'io.github.jeremyliao:live-event-bus:1.8.0'//共存类广告需要//非AndroidX
 }
