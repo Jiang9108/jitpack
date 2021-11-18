@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yunbu_write"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/yunbu_linegray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/ll_game_title_sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/write_shape_c20"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_yunbu_game_sousuo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="请输入游戏名称"
+                android:textColor="@color/yunbu_textgray3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yunbu_game_xuanshang"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@mipmap/ic_yunbu_game_reward"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_game_title_ty1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@color/yunbu_textblack"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_game_title_ty1_zhishiqi"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/yunbu_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_game_title_ty2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="充值高返"
+                android:textColor="@color/yunbu_textgray2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_game_title_ty2_zhishiqi"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/yunbu_green"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_game_title_ty3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="手游"
+                android:textColor="@color/yunbu_textgray2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_game_title_ty3_zhishiqi"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/yunbu_green"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_game_title_ty4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="捕鱼"
+                android:textColor="@color/yunbu_textgray2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_game_title_ty4_zhishiqi"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/yunbu_green"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/yunbu_linegray" />
+
+    <com.lt.flowwall.xPullRefresh.XListView
+        android:id="@+id/xlv_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/yunbu_transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

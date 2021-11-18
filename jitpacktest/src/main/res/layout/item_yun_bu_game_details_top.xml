@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yunbu_write"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_game_details_title_background"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/yunbu_green"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/iv_game_details_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:padding="8dp"
+                android:src="@mipmap/ic_yunbu_back_write" />
+
+            <TextView
+                android:id="@+id/tv_game_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:singleLine="true"
+                android:text="游戏详情"
+                android:textColor="@color/yunbu_write"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:background="@color/yunbu_write"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iv_game_details_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@color/yunbu_textblack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="游戏名称"
+                    android:textColor="@color/yunbu_textblack"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_game_details_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0M"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="11sp" />
+
+                    <!--       <TextView
+                               android:id="@+id/tv_game_details_type"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:gravity="center"
+                               android:text="支持安卓"
+                               android:textColor="@color/textblack2"
+                               android:textSize="11sp" />
+       -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已验证"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="9sp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/line"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/yunbu_textblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无广告"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="9sp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/line"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/yunbu_textblack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无病毒"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="9sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/tv_game_details_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/red_shape_c5"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="0.00元"
+                    android:textColor="@color/yunbu_write"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="剩余"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_game_details_time_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@mipmap/ic_yunbu_game_details_time"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="0"
+                        android:textColor="@color/yunbu_write"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_game_details_time_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@mipmap/ic_yunbu_game_details_time"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="0"
+                        android:textColor="@color/yunbu_write"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_game_details_time_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@mipmap/ic_yunbu_game_details_time"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="0"
+                        android:textColor="@color/yunbu_write"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_game_details_time_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@mipmap/ic_yunbu_game_details_time"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="0"
+                        android:textColor="@color/yunbu_write"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:text="天"
+                        android:textColor="@color/yunbu_textgray2"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/yunbu_linegray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yunbu_write"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:src="@mipmap/ic_yunbu_game_details_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:text="温馨提示"
+                android:textColor="@color/yunbu_textblack"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="刷新"
+                    android:textColor="@color/yunbu_textgray2"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_game_details_registered_refresh"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_yunbu_refresh_gray" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_game_details_account_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/light_green_shape2_c10"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/green_shape_c10_top">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_registered_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="尚未注册"
+                    android:textColor="@color/yunbu_write"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_registered"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_gameid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="游戏ID："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_gamename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="游戏名称："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_taskone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="等级任务："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_tasktwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="充值任务："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_taskthree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="冲榜任务："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_taskfive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="冲榜任务："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_game_details_registered_msg_taskfour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="角色ID："
+                            android:textColor="@color/yunbu_orange"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_game_details_registered_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textColor="@color/yunbu_textchecked"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_game_details_registered_cant_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/orange_shape_c20"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="4dp"
+                android:text="点击开始试玩，注册账号试玩拿奖励~"
+                android:textColor="@color/yunbu_write"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_game_details_registered_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="成功注册账号后，请点击右上角刷新图标，确认账号再试玩或者充值。"
+                android:textColor="@color/yunbu_textchecked"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_account_msg_rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="安装攻略:"
+                    android:textColor="@color/yunbu_textblack"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、安装-获取手机设备信息请允许。"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="2、账号-请确认上面显示的账号与您注册的账号一致后再试玩或充值，以免造成不必要的损失。"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_details_rules_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3、客服-如果有疑问，请截图该页面，并联系客服QQ：3096561606，工作时间（工作日9：00-18：00）"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_game_details_account_msg_open_down"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="点击展开"
+                android:textColor="@color/yunbu_textgray"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_game_details_account_msg_open_down"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="4dp"
+                android:src="@mipmap/ic_yunbu_down_green" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/yunbu_linegray" />
+
+    <LinearLayout
+        android:id="@+id/ll_game_details_task_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_item_type_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="高额奖励"
+                    android:textColor="@color/yunbu_textblack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_one_zhishiqi"
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:background="@color/yunbu_green" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_item_type_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="充值返现"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_two_zhishiqi"
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:background="@color/yunbu_green"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_item_type_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="榜单"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_four_zhishiqi"
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:background="@color/yunbu_green"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_game_details_item_type_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="榜单"
+                    android:textColor="@color/yunbu_textgray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_game_details_item_type_three_zhishiqi"
+                    android:layout_width="30dp"
+                    android:layout_height="3dp"
+                    android:background="@color/yunbu_green"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginTop="5dp"
+            android:background="@color/yunbu_linegray" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_game_details_shiwanwanfei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_game_details_task_type"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:text="试玩范围"
+        android:textColor="@color/yunbu_textblack" />
+
+
+</LinearLayout>

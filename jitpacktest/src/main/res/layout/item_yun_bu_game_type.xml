@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp">
+
+
+        <ImageView
+            android:id="@+id/iv_item_game_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@color/yunbu_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_item_game_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收取现金"
+                android:textColor="@color/yunbu_textblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_item_game_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_vertical"
+                android:text="简单易学易上手，在家就能赚取的小游戏。"
+                android:textColor="@color/yunbu_textgray2"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/tv_item_game_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_shape_c8_sanjiao"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:text="结束时间：2021-08-21 18：00：00"
+                android:textColor="@color/yunbu_write"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_game_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+0.01元"
+            android:textColor="@color/yunbu_textchecked"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line2"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/yunbu_linegray" />
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="yunbu_write">#ffffff</color>
+    <color name="yunbu_green">#009689</color>
+    <color name="yunbu_lightgreen">#9FD8D3</color>
+    <color name="yunbu_textchecked">#ff4c33</color>
+    <color name="yunbu_orange">#FF995F</color>
+
+    <color name="yunbu_textblack">#333333</color>
+
+    <color name="yunbu_textgray">#999999</color>
+    <color name="yunbu_textgray2">#666666</color>
+    <color name="yunbu_textgray3">#B2B2B2</color>
+    <color name="yunbu_linegray">#EDEEEF</color>
+    <color name="yunbu_linegray2">#EDEEEF</color>
+
+
+    <color name="yunbu_transparent">#00FFFFFF</color>
+    <color name="yunbu_popbg">#57000000</color>
+
+</resources>

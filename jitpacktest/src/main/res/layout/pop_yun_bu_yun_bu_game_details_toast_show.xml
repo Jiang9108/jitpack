@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yunbu_popbg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/write_shape_c20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="温馨提示："
+            android:textColor="@color/yunbu_textblack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_game_details_toast_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="前往QQ寻找客服帮助，需提供如下您的游戏凭证；"
+            android:textColor="@color/yunbu_textgray2"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_game_details_toast_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="游戏凭证："
+            android:textColor="@color/yunbu_textchecked"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_game_details_toast_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="复制前往"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/yunbu_write"
+            android:background="@drawable/orange_shape_c20"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

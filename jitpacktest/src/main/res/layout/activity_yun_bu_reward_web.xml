@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.YunBuRewardWebActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_yunbu_reward_title_background"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/yunbu_green">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/iv_yunbu_reward_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@mipmap/ic_yunbu_back_write" />
+
+            <TextView
+                android:id="@+id/tv_yunbu_reward_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="应用赚"
+                android:textColor="@color/yunbu_write"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_yunbu_reward"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software"
+        android:scrollbars="none"/>
+
+</LinearLayout>

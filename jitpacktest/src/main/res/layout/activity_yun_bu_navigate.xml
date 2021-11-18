@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/yunbu_green"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_main_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_yunbu_back_write" />
+
+        <TextView
+            android:id="@+id/tv_navigate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="云步试玩"
+            android:textColor="@color/yunbu_write"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_navigate_title_withdrawal"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/yunbu_write"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <com.lt.flowwall.tools.customViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="88dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_yunbu_game_details_bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_yunbu_game"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_navigation_game_bgcolor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/yunbu_green">
+
+                <ImageView
+                    android:id="@+id/homeimage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_yunbu_game_select" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/hometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="游戏中心"
+                android:textColor="@color/yunbu_green"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_yunbu_reward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_navigation_reward_bgcolor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/yunbu_green">
+
+                <ImageView
+                    android:id="@+id/rewardimage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_yunbu_reward_unselect" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/rewardtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="快赚任务"
+                android:textColor="@color/yunbu_textgray"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_yunbu_partin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_navigation_partin_bgcolor"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/yunbu_green">
+
+                <ImageView
+                    android:id="@+id/partinimage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_yunbu_partin_unselect" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/partintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="我的参与"
+                android:textColor="@color/yunbu_textgray"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

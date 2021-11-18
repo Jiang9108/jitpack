@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">jitpacktest</string>
+
+
+    <!--    下拉刷新-->
+    <string name="jiazaigengduo">加载更多</string>
+    <string name="xialashaxin">下拉刷新</string>
+    <string name="shangcigengxin">上次更新时间</string>
+    <string name="diyicishuaxin">第一次刷新</string>
+    <string name="songkaishuaxin">松开刷新数据</string>
+    <string name="songkaijiazai">松开载入更多</string>
+    <string name="zhenzaijiazai">正在加载...</string>
+    <string name="zhenzaijiazxai">愿一生伴你左右!</string>
 </resources>

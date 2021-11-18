@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yunbu_transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="56dp"
+        android:padding="10dp"
+        android:background="@mipmap/bg_yunbu_game_details_tishi">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yunbu_orange"
+            android:layout_marginBottom="10dp"
+            android:text="部分做过该任务的手机或微信可能无法注册！请确认显示账号与注册账号一致后，再试玩或充值！点击此处开始下载。"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

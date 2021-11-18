@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yunbu_popbg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/write_shape_c20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="提示"
+                android:textColor="@color/yunbu_textblack"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_toast_show_close"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@mipmap/ic_yunbu_close_gray" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line2"
+            android:background="@color/yunbu_linegray2" />
+
+
+        <TextView
+            android:id="@+id/tv_toast_show__msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="微信功能维护中！暂时无法使用！"
+            android:textColor="@color/yunbu_textblack"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_toast_show_close"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/yunbu_write"
+            android:background="@drawable/green_shape_c20" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
