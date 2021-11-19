@@ -33,7 +33,6 @@ import com.lt.jitpacktest.utils.Utils;
 import com.lt.jitpacktest.yunbuimageload.AsyncImageLoader;
 import com.lt.jitpacktest.yunbuimageload.FileCache;
 import com.lt.jitpacktest.yunbuimageload.MemoryCache;
-import com.qubian.mob.QbManager;
 
 
 import org.json.JSONArray;
@@ -202,7 +201,7 @@ public class YunBuSearchActivity extends AppCompatActivity {
                         Long nowtime = System.currentTimeMillis();
 
                         if (nowtime < stoptime) {
-                            loadInteractionAD();
+                            //loadInteractionAD();
                         } else {
                             Utils.showToast(context, "该游戏已结束");
                         }
@@ -565,41 +564,5 @@ public class YunBuSearchActivity extends AppCompatActivity {
         }
     }
 
-    private void loadInteractionAD() {
-        //加载插屏
-        // codeId 平台申请的代码位id
-        // channelNum 渠道号（可不填）
-        // channelVersion 渠道版本号（填写渠道号时必填，否则会导致失效）
-        // viewWidth 期望模板view的width（height自适应），默认值450（单位dp）
-        // loadListener 回调
-        QbManager.loadInteraction("1458726482611290151", "", "", 600, YunBuSearchActivity.this, new QbManager.InteractionLoadListener() {
-            @Override
-            public void onFail(String s) {
-                Toast.makeText(YunBuSearchActivity.this, s, Toast.LENGTH_SHORT).show();
-                goGameDetails();
-            }
 
-            @Override
-            public void onDismiss() {
-                goGameDetails();
-            }
-
-            @Override
-            public void onVideoReady() {
-
-            }
-
-            @Override
-            public void onVideoComplete() {
-
-            }
-        });
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        //释放所有激励视频资源，建议onDestroy中调用，也可在关闭回调中调用
-        QbManager.destroyInteractionAll();
-    }
 }

@@ -23,27 +23,13 @@ android {
         }
     }
 
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-
-    }
-
-    /*  buildTypes {
+      buildTypes {
           release {
               minifyEnabled false
               proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
           }
       }
-  */
+
 }
 
 
@@ -55,19 +41,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    //添加QB依赖包
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation(name: 'qb_lib_1.11.15.4', ext: 'aar')
-    implementation(name: 'open_sdk_4.0.0.1', ext: 'aar')
-    implementation(name: 'GDTSDK.unionNormal.4.410.1280.1', ext: 'aar')
-    implementation(name: 'kssdk-all-3.3.23', ext: 'aar')
-    implementation(name: 'tb_sdk_crack-release', ext: 'aar')
-    implementation 'com.alibaba:fastjson:1.2.68'
-    implementation(name: 'Baidu_MobAds_SDK-release_v9.16', ext: 'aar')
-    implementation(name: 'windAd-3.4.1', ext: 'aar')
-    implementation(name: 'qb_lib_pr', ext: 'aar')
-    //共存类广告需要
-    implementation 'io.github.jeremyliao:live-event-bus:1.8.0'
-    //共存类广告需要//非AndroidX
-    implementation files('libs/android-query-full.0.26.7.jar')
+
+
+    //implementation(name: 'GDTSDK.unionNormal.4.410.1280.1', ext: 'aar')
+    //implementation 'com.android.support:multidex:1.0.3'
+
 }
