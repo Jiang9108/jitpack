@@ -14,13 +14,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
 
-        multiDexEnabled true
 
-        javaCompileOptions {
-            annotationProcessorOptions {
-                includeCompileClasspath = true
-            }
-        }
     }
 
       buildTypes {
@@ -43,7 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
 
-    //implementation(name: 'GDTSDK.unionNormal.4.410.1280.1', ext: 'aar')
-    //implementation 'com.android.support:multidex:1.0.3'
+    implementation(name: 'GDTSDK.unionNormal.4.410.1280.1', ext: 'aar')
+    implementation 'com.android.support:multidex:1.0.3'
 
 }
